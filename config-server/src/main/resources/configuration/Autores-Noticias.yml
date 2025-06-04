@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: Autores-Noticias
+
+  data:
+    mongodb:
+      uri: mongodb://admin:12345@localhost:27017/noticiasDB?authSource=admin
+
+server:
+  port: 8082

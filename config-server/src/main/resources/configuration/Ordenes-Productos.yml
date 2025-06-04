@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: Ordenes-Productos
+
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/proyectoBack?currentSchema=proyectoBack
+    username: postgres
+    password: 12345
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+server:
+  port: 8081

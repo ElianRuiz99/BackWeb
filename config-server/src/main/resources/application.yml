@@ -1,0 +1,13 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-server
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: file:///Users/Shared/Desarrollo/Universidad/DesarrolloWeb/Back/config-server/src/main/resources/configuration
