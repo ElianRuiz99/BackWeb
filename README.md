@@ -1,7 +1,28 @@
 
 # Proyecto Backend
 
-## 🗒️ Contenido
+## 📚 Tabla de Contenido
+
+- [🗒️ ¿Qué trae este proyecto?](#️-que-trae-este-proyecto-)
+- [🧩 Arquitectura del Proyecto](#-arquitectura-del-proyecto)
+  - [🚪 API Gateway: api-gateway](#-api-gateway-api-gateway)
+  - [🔎 Servidor de descubrimiento: eureka-server](#-servidor-de-descubrimiento-eureka-server)
+  - [⚙️ Servidor de configuración: config-server](#-servidor-de-configuración-config-server)
+  - [📰 Microservicio 1: Autores-Noticias](#-microservicio-1-autores-noticias)
+  - [📦 Microservicio 2: Ordenes-Productos](#-microservicio-2-ordenes-productos)
+  - [🛠️ Configuración de bases de datos](#️-configuración-de-bases-de-datos)
+- [✅ ¿ Como es el flujo general?](#-como-es-el-flujo-general)
+- [🚀 Pasos para ejecutar el sistema completo](#-pasos-para-ejecutar-el-sistema-completo)
+  - [🧱 1. Levantar las bases de datos con Docker](#-1-levantar-las-bases-de-datos-con-docker)
+  - [📦 2. Iniciar el Servidor de Descubrimiento (eureka-server)](#-2-iniciar-el-servidor-de-descubrimiento-eureka-server)
+  - [⚙️ 3. Iniciar el Servidor de Configuración (config-server)](#-3-iniciar-el-servidor-de-configuración-config-server)
+  - [🔧 4. Iniciar los microservicios](#-4-iniciar-los-microservicios)
+  - [🚪 5. Iniciar el API Gateway (api-gateway)](#-5-iniciar-el-api-gateway-api-gateway)
+  - [🧪 6. Probar todo desde el navegador o Postman](#-6-probar-todo-desde-el-navegador-o-postman)
+- [✅ Verificación final](#-verificación-final)
+
+
+## 🗒️ ¿Que trae este proyecto?
 
 Este proyecto consta de:
 - API Getway: api-Getway
@@ -69,7 +90,7 @@ Contiene archivos docker-compose.yml para levantar la base de datos PostgreSQL u
 Config-Mongo:
 Contiene archivos docker-compose.yml para iniciar la base de datos MongoDB utilizada por Autores-Noticias.
 
-## ✅ ¿ Como es el flujo general?
+## ✅ ¿Como es el flujo general?
 Se arranca eureka-server para permitir el registro de servicios.
 
 Luego config-server, que provee la configuración remota.
